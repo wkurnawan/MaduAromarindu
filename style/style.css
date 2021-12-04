@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .tombol{
+      background-color: #F36523;
+      color: white;
+      padding: 10px;
+      border-radius: 15px;
+  }
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.konten{
+    display: grid;
+    grid-template-areas: "headertop headertop" "conten1 conten2" "detail detail" "gambar gambar";
+}
+
+header{
+    grid-area: headertop;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;    
+}
+
+nav{
+    display: grid;
+    grid-template-areas: "logo menu tombol";
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.kiri{
+    grid-area: conten1;
+    font-size: x-large;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.kanan{
+    grid-area: conten2;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+
+.detailproduk{
+    grid-area: detail;
+    text-align: center;
+    font-size: x-large;
+    background-color: rgb(219, 219, 219);
+}
+
+
+.produk{
+    grid-area: gambar;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: rgb(219, 219, 219);
+    padding-bottom: 10%;
+}
+
+
+.produk1, .produk2, .produk3, .produk4{
+    box-shadow: 0 0 10px rgb(173, 161, 161);
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
+    
+    
+}
+.produk1 img, .produk2 img, .produk3 img, .produk4 img{
+    border-radius: 15px;
+}
+
+.logo{
+    grid-area: logo;
+    display: flex;
+    gap: 20px;
+
+}
+.logo p{
+    font-weight: bold;
+    font-size: 15px;
+}
+.menu{
+    grid-area: menu;    
+}
+.menu a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+.kontak{
+    grid-area: tombol;
+}
+
+
+.footer{
+    display: grid;
+    grid-template-areas: "footer1" "footer2";
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+    padding-top: 5px;
+    background-color: #F36523;
+}
+
+.bungkus2{
+    background-color: #da4500;
+    margin: 0 auto;
+    width: 100%;
+}
+.footer1{
+    grid-area: footer1;
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    margin-top: 20px;
+}
+.tombolfooter{
+    background-color: white;
+    color: #F36523;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+.footer2{
+    grid-area: footer2;
+    display: flex;
+    gap: 50px;
+    justify-content:space-between;
+    padding: 15px;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+.sosmed a{
+    color: white;
+    margin-left: 20px;
+}
